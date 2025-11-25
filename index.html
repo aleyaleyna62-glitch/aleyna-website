@@ -2,104 +2,83 @@
 <html lang="tr">
 <head>
   <meta charset="utf-8">
-  <title>Aleyna Günay — Ana Sayfa</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Aleyna Günay — Kişisel Web Sitesi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- GOOGLE DOĞRULAMA KODU -->
+  <meta name="google-site-verification" content="google1bd27c9edd469de5.html">
+
   <style>
-    :root{ --accent:#a43aff; --bg:#f7f7fb; --card:#fff; --muted:#666; }
-    *{box-sizing:border-box}
-    body{font-family:Inter, "Segoe UI", Roboto, Arial; margin:0; background:var(--bg); color:#222;}
-    header{background:var(--accent); color:#fff; padding:14px 18px; display:flex; align-items:center; gap:18px;}
-    header .brand{font-weight:700;}
-    nav a{color:#fff; text-decoration:none; margin-right:14px; font-weight:600;}
-    .container{max-width:980px; margin:36px auto; padding:0 18px;}
-    .hero{background:var(--card); padding:28px; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.06);}
-    .cols{display:grid; grid-template-columns:1fr 320px; gap:20px; margin-top:18px;}
-    .card{background:var(--card); padding:18px; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,0.04);}
-    footer{text-align:center; color:var(--muted); padding:28px 0;}
-    .widget{margin-top:14px;}
-    @media (max-width:900px){ .cols{grid-template-columns:1fr} nav{display:flex; flex-wrap:wrap} }
+    body{font-family:Inter, Arial; margin:0; background:#f6f6fb;}
+    header{background:#a43aff; color:#fff; padding:14px 20px; font-size:20px;}
+    nav{background:#fff; padding:10px; display:flex; gap:12px; border-bottom:2px solid #eee;}
+    nav a{
+      text-decoration:none;
+      color:#6a00ff;
+      font-weight:600;
+      border:1px solid #caa8ff;
+      padding:6px 10px;
+      border-radius:8px;
+    }
+    nav a:hover{background:#e9d9ff;}
+
+    .container{padding:20px;}
+    h2{color:#6a00ff;}
+
+    .card{
+      background:#fff;
+      padding:16px;
+      margin-top:15px;
+      border-radius:10px;
+      box-shadow:0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    a.button{
+      display:inline-block;
+      margin-top:8px;
+      padding:8px 14px;
+      background:#a43aff;
+      color:#fff;
+      border-radius:8px;
+      text-decoration:none;
+    }
+    a.button:hover{background:#8c33e6;}
   </style>
 </head>
+
 <body>
-  <header>
-    <div class="brand">Aleyna Günay</div>
-    <nav aria-label="Ana menü">
-      <a href="index.html">Ana Sayfa</a>
-      <a href="hakkimda.html">Hakkımda</a>
-      <a href="projeler.html">Projeler</a>
-      <a href="iletisim.html">İletişim</a>
-      <a href="kaynaklar.html">Kaynaklar</a>
-    </nav>
-  </header>
 
-  <main class="container">
-    <section class="hero">
-      <h1>Merhaba! Web Portföyüme Hoş Geldin</h1>
-      <p style="color:var(--muted); margin-top:6px;">
-        Bu site, yaptığım web ve yazılım projelerini, öğrenme süreçlerimi ve iletişim bilgilerimi paylaştığım kişisel portföyüm.
-      </p>
+<header>🌸 Aleyna Günay — Kişisel Web Sitesi</header>
 
-      <div class="cols">
-        <div>
-          <div class="card">
-            <h3>Site Hakkında</h3>
-            <p style="margin:6px 0; color:var(--muted);">
-              Bu web sitesi HTML, CSS ve basit JavaScript kullanılarak hazırlandı. Amacı hem çalışmalarımı sergilemek hem de web tasarım ve geliştirme becerilerimi göstermek.
-            </p>
-          </div>
+<nav>
+  <a href="index.html">Ana Sayfa</a>
+  <a href="hakkimda.html">Hakkımda</a>
+  <a href="projeler.html">Projeler</a>
+  <a href="iletisim.html">İletişim</a>
+  <a href="kaynaklar.html">Kaynaklar</a>
+</nav>
 
-          <div class="card" style="margin-top:14px;">
-            <h3>Projelerime Göz At</h3>
-            <p style="color:var(--muted); margin:6px 0;">
-              Burada örnek web siteleri, Python araçları ve elektronik projelerim yer alıyor:
-            </p>
-            <ul style="color:var(--muted); margin:6px 0 0 18px;">
-              <li>Kişisel portföy sitesi (bu site)</li>
-              <li>Konsol tabanlı Python hesap makinesi</li>
-              <li>Basit JavaScript oyun uygulaması</li>
-            </ul>
-            <p><a href="projeler.html">Projeler sayfasına git →</a></p>
-          </div>
+<div class="container">
 
-          <!-- Döviz ve Hava Durumu Widget'ları -->
-          <div class="card widget">
-            <h3>Döviz Kurları</h3>
-            <div id="doviz" style="color:#555;">Yükleniyor...</div>
-          </div>
+  <h2>👋 Hoş Geldin</h2>
+  <div class="card">
+    Bu site Aleyna Günay tarafından hazırlanmıştır.  
+    Burada projelerimi inceleyebilir, hakkımda bilgi alabilir ve iletişim sağlayabilirsin.
+  </div>
 
-          <div class="card widget">
-            <h3>Hava Durumu (İstanbul)</h3>
-            <div id="hava" style="color:#555;">Yükleniyor...</div>
-          </div>
+  <h2>📈 Döviz Kurları</h2>
+  <div class="card">
+    <p>Döviz kurları için aşağıdaki linke tıklayın:</p>
+    <a class="button" href="https://www.doviz.com/" target="_blank">Döviz Kurları</a>
+  </div>
 
-        </div>
+  <h2>🌤️ Hava Durumu</h2>
+  <div class="card">
+    <p>Hava durumu için aşağıdaki linke tıklayın:</p>
+    <a class="button" href="https://www.mgm.gov.tr/" target="_blank">Hava Durumu</a>
+  </div>
 
-        <aside class="card" aria-label="Hızlı bilgiler">
-          <strong>Hızlı Bilgiler</strong>
-          <p style="margin:10px 0 0; color:var(--muted); line-height:1.5;">
-            <strong>Odak:</strong> Web ve yazılım projeleri
-          </p>
-        </aside>
-      </div>
-    </section>
-  </main>
+</div>
 
-  <footer>© <span id="yil"></span> Aleyna Günay — Web Portföy</footer>
-
-  <script>
-    document.getElementById('yil').textContent = new Date().getFullYear();
-
-    // Döviz (statik örnek)
-    const dovizVeri = { USD: 35.25, EUR: 38.12, GBP: 44.50 };
-    let dovizHtml = "";
-    for(let para in dovizVeri){
-      dovizHtml += para + ": " + dovizVeri[para] + " TL<br>";
-    }
-    document.getElementById('doviz').innerHTML = dovizHtml;
-
-    // Hava Durumu (statik örnek)
-    const havaVeri = { sehir: "İstanbul", sicaklik: "18°C", durum: "Parçalı Bulutlu" };
-    document.getElementById('hava').innerHTML = havaVeri.sehir + " — " + havaVeri.sicaklik + ", " + havaVeri.durum;
-  </script>
 </body>
-</html> 
+</html>
