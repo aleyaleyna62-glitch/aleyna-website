@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <title>Hakkımda — Aleyna Günay</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body{font-family:Inter, Arial, sans-serif; margin:0; background:#f6f6fb; color:#222;}
+    header{background:#a43aff; color:#fff; padding:14px 18px; display:flex; gap:18px; align-items:center;}
+    header .brand{font-weight:700;}
+    nav a{color:#fff; text-decoration:none; margin-right:14px; font-weight:600;}
+    .wrap{max-width:900px; margin:34px auto; padding:0 18px;}
+    .card{background:#fff; padding:26px; border-radius:12px; box-shadow:0 10px 30px rgba(0,0,0,0.05);}
+    h1{margin-top:0;}
+    .muted{color:#666; line-height:1.7;}
+    footer{padding:28px 0; text-align:center; color:#666;}
+    @media (max-width:900px){ nav{flex-wrap:wrap} }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">Aleyna Günay</div>
+    <nav aria-label="Ana menü">
+      <a href="index.html">Ana Sayfa</a>
+      <a href="hakkimda.html">Hakkımda</a>
+      <a href="projeler.html">Projeler</a>
+      <a href="iletisim.html">İletişim</a>
+      <a href="kaynaklar.html">Kaynaklar</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <article class="card" aria-labelledby="baslik">
+      <h1 id="baslik">Hakkımda</h1>
+
+      <p class="muted">
+        <strong>Merhaba! Ben Aleyna Günay.</strong><br>
+        17 yaşındayım ve Bilişim Teknolojileri alanında, özellikle <strong>Yazılım Geliştirme</strong> dalında eğitim alıyorum. Küçük yaşlardan beri teknolojiye ve yazılıma büyük bir ilgi duyuyorum. Kod yazmak, yeni projeler üretmek ve dijital dünyayı keşfetmek beni motive ediyor.
+      </p>
+
+      <p class="muted">
+        Yazılım dışında en çok keyif aldığım şeylerden biri de <strong>yemek yapmak</strong>. Yeni tarifler denemek, kendi özel lezzetlerimi oluşturmak ve mutfakta zaman geçirmek benim için hem bir hobi hem de rahatlama yolu.
+      </p>
+
+      <p class="muted">
+        Kendimi sürekli geliştirmeyi, üretmeyi ve yeni şeyler öğrenmeyi seven biriyim. Hedefim; yazılım alanında güçlü bir bilgi birikimi edinip, gelecekte profesyonel projelere imza atmaktır.
+      </p>
+
+      <h3>Neler yapıyorum?</h3>
+      <ul class="muted">
+        <li>Basit web uygulamaları geliştirme (HTML, CSS, JavaScript)</li>
+        <li>Python ile küçük araçlar yazma</li>
+        <li>Elektronik tabanlı projeler (Arduino, Raspberry Pi) denemeleri</li>
+        <li>Yemek tarifleri deneme ve paylaşma</li>
+      </ul>
+
+      <p style="margin-top:8px; color:#444;">
+        Daha fazla öğrenmek ve projelerimi görmek istersen <a href="projeler.html">Projeler</a> sayfasına bakabilirsin. Bana ulaşmak için de <a href="iletisim.html">İletişim</a> sayfasını kullanabilirsin.
+      </p>
+    </article>
+  </main>
+
+  <footer>© <span id="yil2"></span> Aleyna Günay</footer>
+  <script>document.getElementById('yil2').textContent = new Date().getFullYear();</script>
+</body>
+</html>

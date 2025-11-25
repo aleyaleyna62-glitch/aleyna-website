@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <title>Kaynaklar — Aleyna Günay</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body{font-family:Inter, Arial, sans-serif; margin:0; background:#f6f6fb; color:#222;}
+    header{background:#a43aff; color:#fff; padding:14px 18px; display:flex; align-items:center; gap:18px;}
+    header .brand{font-weight:700;}
+    nav a{color:#fff; text-decoration:none; margin-right:14px; font-weight:600;}
+    nav a:hover{text-decoration:underline;}
+    .wrap{max-width:900px; margin:34px auto; padding:0 18px;}
+    .card{background:#fff; padding:26px; border-radius:12px; box-shadow:0 10px 30px rgba(0,0,0,0.05);}
+    ul{padding-left:20px;}
+    footer{padding:28px 0; text-align:center; color:#666;}
+    @media (max-width:900px){ nav{flex-wrap:wrap} }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">Aleyna Günay</div>
+    <nav aria-label="Ana menü">
+      <a href="index.html">Ana Sayfa</a>
+      <a href="hakkimda.html">Hakkımda</a>
+      <a href="projeler.html">Projeler</a>
+      <a href="iletisim.html">İletişim</a>
+      <a href="kaynaklar.html">Kaynaklar</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h1>Kaynaklar</h1>
+      <p style="color:#666;">Öğrenirken ve projelerimde yararlandığım bazı kaynaklar:</p>
+      <ul style="color:#666;">
+        <li><a href="https://developer.mozilla.org/tr/" target="_blank" class="ref">MDN Web Docs</a> — HTML, CSS, JavaScript dökümantasyonu</li>
+        <li><a href="https://www.w3schools.com/" target="_blank" class="ref">W3Schools</a> — Hızlı örnekler ve referanslar</li>
+        <li><a href="https://www.python.org/" target="_blank" class="ref">Python.org</a> — Resmî Python dökümantasyonu</li>
+        <li><a href="https://www.arduino.cc/reference/en/" target="_blank" class="ref">Arduino Docs</a> — Arduino referansı ve örnekler</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>© <span id="yil5"></span> Aleyna Günay</footer>
+  <script>document.getElementById('yil5').textContent = new Date().getFullYear();</script>
+</body>
+</html>
